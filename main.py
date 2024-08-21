@@ -8,7 +8,7 @@ import time
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
-class PDFScraperApp:
+class ScraperApp:
     def __init__(self, root):
         self.root = root
         self.root.title("File Downloader")
@@ -199,5 +199,5 @@ class PDFScraperApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = PDFScraperApp(root)
+    app = ScraperApp(root)
     root.mainloop()
