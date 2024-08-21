@@ -17,20 +17,25 @@ The **Google Search Query Document Downloader** is a versatile tool designed to 
 ## Installation
 
 1. **Clone the Repository**:
+   
    ```bash
    git clone https://github.com/rishabhc9/Google-Search-Query-Documents-Downloader.git
    cd google-search-query-document-downloader
    ```
-2. **Install Required Packages:**:
+   
+3. **Install Required Packages:**:
 Ensure you have Python installed, then install the required packages:
+
    ```bash
    pip install -r requirements.txt
    ```
-3. **Run the Tool:**:
+   
+5. **Run the Tool:**:
 Execute the main script using the following command:
-  ```bash
-  python app.py
-  ```
+
+   ```bash
+   python app.py
+   ```
 
 ## Usage
 
