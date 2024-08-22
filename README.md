@@ -30,15 +30,15 @@ Ensure you have Python installed, then install the required packages:
    pip install -r requirements.txt
    ```
    
-5. **Run the Tool:**:
+4. **Run the Tool:**:
 Execute the main script using the following command:
 
    ```bash
    python main.py
    ```
-###or
+### or
 
-6. **Run the Multi Page Scraping Tool:**:
+5. **Run the Multi Page Scraping Tool:**:
 Execute the multi page scraping script using the following command:
 
    ```bash
