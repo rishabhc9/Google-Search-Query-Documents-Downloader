@@ -111,15 +111,6 @@ class ScraperApp:
             workbook = openpyxl.load_workbook(excel_file)
             sheet = workbook.active
 
-            query_column = None
-            for cell in sheet[1]:
-                if cell.value and cell.value.lower() == 'queries':
-                    query_column = cell.column_letter
-                    break
-
-            if not query_column:
-                raise ValueError("No 'queries' column found in the Excel file.")
-            
             cache_file = 'downloaded_files_cache.txt'
             downloaded_hashes = set()
 
@@ -127,8 +118,8 @@ class ScraperApp:
                 with open(cache_file, 'r') as f:
                     downloaded_hashes = set(f.read().splitlines())
 
-            for row in sheet.iter_rows(min_row=2):
-                search_query = row[sheet[query_column + '1'].column - 1].value
+            for row in sheet.iter_rows(min_row=2, values_only=True):  # Start from row 2
+                search_query = row[0]  # Assuming the queries are in the first column
                 if not search_query:
                     continue
                 
