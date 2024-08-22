@@ -46,6 +46,10 @@ class ScraperApp:
         self.scrape_button = tk.Button(root, text="Scrape", command=self.start_scraping)
         self.scrape_button.grid(row=3, column=1, padx=10, pady=10)
 
+        # Row 5: Clear Cache Button
+        self.clear_cache_button = tk.Button(root, text="Clear Cache", command=self.clear_cache)
+        self.clear_cache_button.grid(row=3, column=2, padx=10, pady=10)
+
         # Status messages (initially hidden)
         self.status_message = tk.Label(root, text="", fg="purple")
         self.success_label = tk.Label(root, text="", fg="green")
@@ -78,7 +82,7 @@ class ScraperApp:
         
         # Remove previous success message and display status message
         self.success_label.grid_remove()
-        self.status_message.config(text="Scraping started. Please wait for completion.")
+        self.status_message.config(text="Scraping started. Please wait until completion.")
         self.status_message.grid(row=4, column=0, columnspan=3, padx=10, pady=10)
         
         # Perform scraping in a separate thread to avoid freezing the GUI
@@ -196,6 +200,14 @@ class ScraperApp:
         # Remove status message and display an error message
         self.status_message.grid_remove()
         messagebox.showerror("Error", message)
+
+    def clear_cache(self):
+        cache_file = 'downloaded_files_cache.txt'
+        if os.path.exists(cache_file):
+            os.remove(cache_file)
+            messagebox.showinfo("Cache Cleared", "Cache file has been successfully cleared.")
+        else:
+            messagebox.showinfo("No Cache Found", "No cache file found to clear.")
 
 if __name__ == "__main__":
     root = tk.Tk()
