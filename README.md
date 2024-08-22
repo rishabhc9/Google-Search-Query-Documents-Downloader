@@ -23,21 +23,21 @@ The **Google Search Query Document Downloader** is a versatile tool designed to 
    cd google-search-query-document-downloader
    ```
    
-3. **Install Required Packages:**:
+2. **Install Required Packages:**:
 Ensure you have Python installed, then install the required packages:
 
    ```bash
    pip install -r requirements.txt
    ```
    
-4. **Run the Tool:**
+3. **Run the Tool:**
 Execute the main script using the following command
 
    ```bash
    python main.py
    ```
 
-5. **Run the Multi Page Scraping Tool:**
+4. **Run the Multi Page Scraping Tool:**
 Execute the multi page scraping script using the following command:
 
    ```bash
