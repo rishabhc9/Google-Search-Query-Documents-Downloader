@@ -36,6 +36,7 @@ Execute the main script using the following command
    ```bash
    python main.py
    ```
+<p align="center">**OR**</p>
 
 4. **Run the Multi Page Scraping Tool:**
 Execute the multi page scraping script using the following command:
