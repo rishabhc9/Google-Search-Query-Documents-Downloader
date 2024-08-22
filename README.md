@@ -52,6 +52,6 @@ Execute the main script using the following command:
    - Click the "Scrape" button to begin the download process. The tool will show a status message indicating that scraping has started and will update with a success message once the process is complete.
 
 ## Screenshots
-<img width="908" alt="Screenshot 2024-08-22 at 12 10 08 AM" src="https://github.com/user-attachments/assets/9447f759-8620-432e-a630-f5348644efef">
+<img width="944" alt="Screenshot 2024-08-22 at 11 41 42 AM" src="https://github.com/user-attachments/assets/0b724165-dc6e-4567-a376-45556a4f0469">
 
 
