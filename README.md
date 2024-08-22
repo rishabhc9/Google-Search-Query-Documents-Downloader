@@ -36,8 +36,9 @@ Execute the main script using the following command:
    ```bash
    python main.py
    ```
+###or
 
-6.**Run the Multi Page Scraping Tool:**:
+6. **Run the Multi Page Scraping Tool:**:
 Execute the multi page scraping script using the following command:
 
    ```bash
